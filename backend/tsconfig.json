@@ -1,0 +1,25 @@
+{
+   "compilerOptions": {
+      /* Visit https://aka.ms/tsconfig to read more about this file */
+
+      /* Language and Environment */
+      "target": "es2016",
+
+      /* Modules */
+      "module": "commonjs",
+      "baseUrl": "./",
+      "paths": {
+         "@services/*": ["src/services/*"],
+         "@utils/*": ["src/utils/*"]
+      },
+      "outDir": "./dist",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+
+      /* Type Checking */
+      "strict": true,
+
+      /* Completeness */
+      "skipLibCheck": true /* Skip type checking all .d.ts files. */
+   }
+}
