@@ -22,13 +22,13 @@ function Share({ reff }: { reff: string | null | undefined }) {
    return (
       <div className="fixed pr-8 bottom-0 w-full mb-20">
          <Button
-            className="w-full bg-gradient-to-br from-purple-600 to-green-600 mb-2"
+            className="w-full bg-gradient-to-b from-blue-600 to-blue-950 mb-2"
             onClick={forwardMessage}
          >
             Send
          </Button>
          <Button
-            className="w-full bg-gradient-to-br from-purple-600 to-green-600"
+            className="w-full bg-gradient-to-b from-blue-600 to-blue-950"
             onClick={copyLink}
          >
             Copy Link

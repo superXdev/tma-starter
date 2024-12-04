@@ -41,7 +41,7 @@ function Friend() {
 
    return (
       <>
-         <div className="p-[2px] bg-gradient-to-r from-purple-600 via-cyan-700 to-green-900 rounded-xl">
+         <div className="p-[2px] bg-gradient-to-r from-blue-500 to-blue-900 rounded-xl">
             <Card className="bg-gray-800 text-white shadow-lg border-none">
                <CardHeader className="text-xl font-semibold">
                   Invite Friends & earn

@@ -36,7 +36,7 @@ function Home() {
 
    return (
       <>
-         <div className="p-[2px] bg-gradient-to-r from-purple-600 via-cyan-700 to-green-900 max-w-48 rounded-xl">
+         <div className="p-[2px] bg-gradient-to-r from-blue-500 to-blue-900 max-w-48 rounded-xl">
             <div className="bg-gray-900 p-2 text-white flex w-full h-full gap-2 rounded-xl">
                <div>
                   <img
