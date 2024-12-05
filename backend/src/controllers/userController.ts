@@ -11,15 +11,10 @@ export const createUser = async (
    req: Request,
    res: Response
 ): Promise<void> => {
-   const { data, reff } = req.body;
-   const isValid = verifyTelegramWebAppData(data);
+   const { reff } = req.body;
+   const telegramData = req.headers["x-telegram-data"];
 
-   if (!isValid) {
-      res.status(403).json({ message: "Forbidden action" });
-      return;
-   }
-
-   const userData: UserData = extractUserData(data);
+   const userData: UserData = extractUserData(telegramData as string);
    const user = await userService.createUser(
       userData.id.toString(),
       userData.first_name,
@@ -36,7 +31,6 @@ export const getRefferals = async (
    res: Response
 ): Promise<void> => {
    const { telegramId } = req.body;
-   console.log(telegramId);
 
    if (!telegramId) {
       res.status(404).json({ message: "User not valid" });
