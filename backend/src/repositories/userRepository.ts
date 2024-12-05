@@ -1,4 +1,4 @@
-import { User } from "./IUserRepository";
+import { User } from "./interfaces/IUserRepository";
 import { PrismaClient, User as UserModel } from "@prisma/client";
 
 export class UserRepository {

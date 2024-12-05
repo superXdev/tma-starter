@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { UserRepository } from "../repositories/userRepository";
 import { UserService } from "@services/userService";
 import { extractUserData, verifyTelegramWebAppData } from "@utils/telegram";
-import { UserData } from "src/repositories/IUserRepository";
+import { UserData } from "src/repositories/interfaces/IUserRepository";
 
 const userRepository = new UserRepository();
 const userService = new UserService(userRepository);
