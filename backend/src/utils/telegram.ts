@@ -3,7 +3,9 @@ import moment from "moment-timezone";
 
 export const verifyTelegramWebAppData = (telegramInitData: string): boolean => {
    const TELEGRAM_BOT_TOKEN: string | undefined = process.env.BOT_KEY;
-   if (!TELEGRAM_BOT_TOKEN) return false;
+   const MAX_SIGNATURE_TIME: string | undefined =
+      process.env.MAX_SIGNATURE_TIME;
+   if (!TELEGRAM_BOT_TOKEN || !MAX_SIGNATURE_TIME) return false;
 
    const initData = new URLSearchParams(telegramInitData);
    const hash = initData.get("hash");
@@ -34,7 +36,7 @@ export const verifyTelegramWebAppData = (telegramInitData: string): boolean => {
          "seconds"
       );
 
-   return hash === _hash && timeDiff < 7200;
+   return hash === _hash && timeDiff < parseInt(MAX_SIGNATURE_TIME);
 };
 
 export const extractUserData = (initData: string) => {
