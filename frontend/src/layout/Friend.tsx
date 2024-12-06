@@ -25,6 +25,7 @@ function Friend() {
             headers: {
                Accept: "application/json",
                "Content-Type": "application/json",
+               "X-Telegram-Data": WebApp.initData,
             },
             body: JSON.stringify({
                telegramId: WebApp.initDataUnsafe.user?.id,

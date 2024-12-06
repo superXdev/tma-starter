@@ -20,9 +20,9 @@ function Home() {
             headers: {
                Accept: "application/json",
                "Content-Type": "application/json",
+               "X-Telegram-Data": WebApp.initData,
             },
             body: JSON.stringify({
-               data: WebApp.initData,
                reff: WebApp.initDataUnsafe.start_param || "",
             }),
          });
@@ -60,11 +60,8 @@ function Home() {
             </div>
          </div>
 
-         <div className="mt-14 flex flex-col h-screen -mx-4 rounded-t-[3.4rem] bg-gray-900 border-t-2 border-blue-700 shadow-[rgba(79,63,252,0.3)_0px_0px_0px_8px]">
-            <div className="my-6 text-center">
-               <h1 className="text-2xl">Your point</h1>
-               <h2 className="text-4xl text-green-600 font-semibold">0</h2>
-            </div>
+         <div className="mt-14 flex flex-col min-h-[26rem] -mx-4 rounded-t-[3.4rem] bg-gray-900 border-t-2 border-blue-700 shadow-[rgba(79,63,252,0.3)_0px_2px_2px_8px]">
+            {/*  */}
          </div>
       </>
    );

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Menu() {
    return (
       <div
-         className="fixed bottom-0 w-full py-3 bg-gradient-to-b from-blue-600 to-blue-950 text-white border-t"
+         className="fixed bottom-0 w-full py-3 bg-gradient-to-b from-blue-600 to-blue-950 text-white"
          style={{ zIndex: 10 }}
       >
          <div className="flex content-between">
