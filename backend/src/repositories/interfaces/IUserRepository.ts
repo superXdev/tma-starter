@@ -4,6 +4,7 @@ export interface User {
    telegramId: string;
    username: string;
    premium: boolean;
+   photo_url: string;
 }
 
 // From telegram data
@@ -14,4 +15,5 @@ export interface UserData {
    username: string;
    language_code: string;
    is_premium?: boolean;
+   photo_url: string;
 }

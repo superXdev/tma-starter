@@ -8,6 +8,7 @@ interface UserData {
    username?: string;
    language_code: string;
    is_premium?: boolean;
+   photo_url: string;
 }
 
 function Home() {
@@ -40,12 +41,7 @@ function Home() {
             <div className="bg-gray-900 p-2 text-white flex w-full h-full gap-2 rounded-xl">
                <div>
                   <img
-                     src={
-                        import.meta.env.VITE_API_URL +
-                        "/avatars/" +
-                        userData?.id +
-                        ".jpg"
-                     }
+                     src={userData?.photo_url}
                      alt="Profile"
                      className="rounded-xl"
                      width={48}
@@ -60,7 +56,7 @@ function Home() {
             </div>
          </div>
 
-         <div className="mt-14 flex flex-col min-h-[26rem] -mx-4 rounded-t-[3.4rem] bg-gray-900 border-t-2 border-blue-700 shadow-[rgba(79,63,252,0.3)_0px_2px_2px_8px]">
+         <div className="mt-20 flex flex-col min-h-[29rem] -mx-4 rounded-t-[3.4rem] bg-gray-900 border-t-2 border-blue-700 shadow-[rgba(79,63,252,0.3)_0px_2px_2px_8px]">
             {/*  */}
          </div>
       </>

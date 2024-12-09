@@ -23,6 +23,7 @@ export class UserRepository {
                isPremium: user.premium,
                reffcode: this.generateReffCode(10),
                referred: referred?.telegramId ?? "",
+               photoUrl: user.photo_url ?? "",
             },
          });
          return result;

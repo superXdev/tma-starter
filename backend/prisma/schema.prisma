@@ -18,6 +18,7 @@ model User {
   telegramId String   @unique
   username   String
   name       String
+  photoUrl   String
   reffcode   String   @unique @default("")
   referred   String   @default("")
   isPremium  Boolean  @default(false)

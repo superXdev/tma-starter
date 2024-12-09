@@ -20,6 +20,7 @@ export const createUser = async (
       userData.first_name,
       userData.username,
       userData.is_premium ?? false,
+      userData.photo_url,
       reff
    );
 

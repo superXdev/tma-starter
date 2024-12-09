@@ -17,6 +17,7 @@ export class UserService {
       name: string,
       username: string,
       isPremium: boolean,
+      photoUrl: string,
       reff: string
    ): Promise<UserModel | any> {
       const exists = await this.userRepository.findById(telegramId);
@@ -27,6 +28,7 @@ export class UserService {
                name,
                username,
                premium: isPremium,
+               photo_url: photoUrl,
             },
             reff
          );
