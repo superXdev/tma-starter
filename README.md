@@ -191,7 +191,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/telegram-mini-apps-starter/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/superXdev/tma-starter/issues).
 
 ## 📧 Contact
 
